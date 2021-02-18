@@ -7,8 +7,10 @@
 
     <ImageView
         android:id="@+id/img_image"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/galaxy"
         android:layout_centerInParent="true"/>
 
     <TextView
@@ -16,6 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:backgroundTint="@color/black_translucent"
+        android:textColor="@color/white"
         android:layout_alignBottom="@id/img_image"
         android:layout_alignStart="@id/img_image"
         android:layout_marginBottom="8dp"
