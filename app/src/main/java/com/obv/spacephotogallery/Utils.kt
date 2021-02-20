@@ -1,6 +1,7 @@
 package com.obv.spacephotogallery
 
 import android.content.Context
+import com.obv.spacephotogallery.data.ImageDetail
 import java.io.IOException
 
 /**
@@ -15,4 +16,10 @@ fun getJsonDataFromAssets(context: Context): String? {
         return null
     }
     return jsonString
+}
+
+class ingList{
+    companion object {
+        lateinit var sortedImageList : List<ImageDetail>
+    }
 }
